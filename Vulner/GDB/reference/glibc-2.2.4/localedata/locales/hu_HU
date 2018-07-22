@@ -1,0 +1,317 @@
+comment_char %
+escape_char  /
+%
+% Hungarian Language Locale for Hungary
+% Source: RAP
+% Address: Sankt Jo//rgens Alle 8
+%    DK-1615 Ko//benhavn V, Danmark
+% Contact: Keld Simonsen
+% Email: Keld.Simonsen@dkuug.dk
+% Tel: +45 - 31226543
+% Fax: +45 - 33256543
+%
+% Changes by Pablo Saratxaga
+% - corrected alphabetical order
+% - made all days abbreviations same lenght by appending spaces
+% Email: srtxg@chanae.alphanet.ch
+% Language: hu
+% Territory: HU
+% Revision: 4.7
+% Date: 2001-01-29
+% Application: general
+% Users: general
+% Charset: ISO-8859-2
+% Distribution and use is free, also
+% for commercial purposes.
+
+LC_IDENTIFICATION
+title      "Hungarian locale for Hungary"
+source     "RAP"
+address    "Sankt Jorgens Alle 8, DK-1615 Kobenhavn V, Danmark"
+contact    ""
+email      "bug-glibc@gnu.org"
+tel        ""
+fax        ""
+language   "Hungarian"
+territory  "Hungary"
+revision   "4.7"
+date       "2001-01-29"
+%
+category  "hu_HU:2000";LC_IDENTIFICATION
+category  "hu_HU:2000";LC_CTYPE
+category  "hu_HU:2000";LC_COLLATE
+category  "hu_HU:2000";LC_TIME
+category  "hu_HU:2000";LC_NUMERIC
+category  "hu_HU:2000";LC_MONETARY
+category  "hu_HU:2000";LC_MESSAGES
+category  "hu_HU:2000";LC_PAPER
+category  "hu_HU:2000";LC_NAME
+category  "hu_HU:2000";LC_ADDRESS
+category  "hu_HU:2000";LC_TELEPHONE
+
+END LC_IDENTIFICATION
+
+LC_COLLATE
+copy "iso14651_t1"
+
+%% a a' c cs d dz dzs e e' f g gy h i j k l ly m n ny o o' p q
+%% r s sz t ty u u' v w x y z zs
+
+collating-symbol  <c-s-hu>
+collating-element <C-S> from "<U0043><U0053>"
+collating-element <c-s> from "<U0063><U0073>"
+collating-element <C-s> from "<U0043><U0073>"
+collating-element <c-S> from "<U0063><U0053>"
+collating-symbol  <d-z-hu>
+collating-element <D-Z> from "<U0044><U005A>"
+collating-element <d-z> from "<U0064><U007A>"
+collating-element <D-z> from "<U0044><U007A>"
+collating-element <d-Z> from "<U0064><U005A>"
+collating-symbol  <d-z-s-hu>
+collating-element <D-Z-S> from "<U0044><U005A><U0053>"
+collating-element <d-z-S> from "<U0064><U007A><U0053>"
+collating-element <D-z-S> from "<U0044><U007A><U0053>"
+collating-element <d-Z-S> from "<U0064><U005A><U0053>"
+collating-element <D-Z-s> from "<U0044><U005A><U0073>"
+collating-element <d-z-s> from "<U0064><U007A><U0073>"
+collating-element <D-z-s> from "<U0044><U007A><U0073>"
+collating-element <d-Z-s> from "<U0064><U005A><U0073>"
+collating-symbol  <g-y-hu>
+collating-element <G-Y> from "<U0047><U0059>"
+collating-element <g-y> from "<U0067><U0079>"
+collating-element <G-y> from "<U0047><U0079>"
+collating-element <g-Y> from "<U0067><U0059>"
+collating-symbol  <l-y-hu>
+collating-element <L-Y> from "<U004C><U0059>"
+collating-element <l-y> from "<U006C><U0079>"
+collating-element <L-y> from "<U004C><U0079>"
+collating-element <l-Y> from "<U006C><U0059>"
+collating-symbol  <n-y-hu>
+collating-element <N-Y> from "<U004E><U0059>"
+collating-element <n-y> from "<U006E><U0079>"
+collating-element <N-y> from "<U004E><U0079>"
+collating-element <n-Y> from "<U006E><U0059>"
+collating-symbol  <s-z-hu>
+collating-element <S-Z> from "<U0053><U005A>"
+collating-element <s-z> from "<U0073><U007A>"
+collating-element <S-z> from "<U0053><U007A>"
+collating-element <s-Z> from "<U0073><U005A>"
+collating-symbol  <t-y-hu>
+collating-element <T-Y> from "<U0054><U0059>"
+collating-element <t-y> from "<U0074><U0079>"
+collating-element <T-y> from "<U0054><U0079>"
+collating-element <t-Y> from "<U0074><U0059>"
+collating-symbol  <z-s-hu>
+collating-element <Z-S> from "<U005A><U0053>"
+collating-element <z-s> from "<U007A><U0073>"
+collating-element <Z-s> from "<U005A><U0073>"
+collating-element <z-S> from "<U007A><U0053>"
+
+collating-symbol <CAP-MIN>
+collating-symbol <MIN-CAP>
+collating-symbol <CAP-CAP-CAP>
+collating-symbol <CAP-CAP-MIN>
+collating-symbol <CAP-MIN-CAP>
+collating-symbol <CAP-MIN-MIN>
+collating-symbol <MIN-CAP-CAP>
+collating-symbol <MIN-CAP-MIN>
+collating-symbol <MIN-MIN-CAP>
+collating-symbol <MIN-MIN-MIN>
+
+reorder-after <MIN>
+<MIN-CAP>
+<MIN-MIN-MIN>
+<MIN-MIN-CAP>
+<MIN-CAP-MIN>
+<MIN-CAP-CAP>
+
+reorder-after <CAP>
+<CAP-MIN>
+<CAP-MIN-MIN>
+<CAP-MIN-CAP>
+<CAP-CAP-MIN>
+<CAP-CAP-CAP>
+
+reorder-after <MAC>
+<ACA>
+
+reorder-after <c>
+<c-s-hu>
+reorder-after <d>
+<d-z-hu>
+<d-z-s-hu>
+reorder-after <g>
+<g-y-hu>
+reorder-after <l>
+<l-y-hu>
+reorder-after <n>
+<n-y-hu>
+reorder-after <s>
+<s-z-hu>
+reorder-after <t>
+<t-y-hu>
+reorder-after <z>
+<z-s-hu>
+
+reorder-after <U0063>
+<c-s>	<c-s-hu>;<PCT>;<MIN>;IGNORE
+<c-S>	<c-s-hu>;<PCT>;<MIN-CAP>;IGNORE
+reorder-after <U0043>
+<C-S>	<c-s-hu>;<PCT>;<CAP>;IGNORE
+<C-s>	<c-s-hu>;<PCT>;<CAP-MIN>;IGNORE
+
+reorder-after <U0064>
+<d-z>	<d-z-hu>;<PCT>;<MIN>;IGNORE
+<d-Z>	<d-z-hu>;<PCT>;<MIN-CAP>;IGNORE
+<d-z-s>	<d-z-s-hu>;<PCT>;<MIN-MIN-MIN>;IGNORE
+<d-z-S>	<d-z-s-hu>;<PCT>;<MIN-MIN-CAP>;IGNORE
+<d-Z-s>	<d-z-s-hu>;<PCT>;<MIN-CAP-MIN>;IGNORE
+<d-Z-S>	<d-z-s-hu>;<PCT>;<MIN-CAP-CAP>;IGNORE
+reorder-after <U0044>
+<D-Z>	<d-z-hu>;<PCT>;<CAP>;IGNORE
+<D-z>	<d-z-hu>;<PCT>;<CAP-MIN>;IGNORE
+<D-Z-S>	<d-z-s-hu>;<PCT>;<CAP-CAP-CAP>;IGNORE
+<D-Z-s>	<d-z-s-hu>;<PCT>;<CAP-CAP-MIN>;IGNORE
+<D-z-S>	<d-z-s-hu>;<PCT>;<CAP-MIN-CAP>;IGNORE
+<D-z-s>	<d-z-s-hu>;<PCT>;<CAP-MIN-MIN>;IGNORE
+
+reorder-after <U0067>
+<g-y>	<g-y-hu>;<PCT>;<MIN>;IGNORE
+<g-Y>	<g-y-hu>;<PCT>;<MIN-CAP>;IGNORE
+reorder-after <U0047>
+<G-Y>	<g-y-hu>;<PCT>;<CAP>;IGNORE
+<G-y>	<g-y-hu>;<PCT>;<CAP-MIN>;IGNORE
+
+reorder-after <U006C>
+<l-y>	<l-y-hu>;<PCT>;<MIN>;IGNORE
+<l-Y>	<l-y-hu>;<PCT>;<MIN-CAP>;IGNORE
+reorder-after <U004C>
+<L-Y>	<l-y-hu>;<PCT>;<CAP>;IGNORE
+<L-y>	<l-y-hu>;<PCT>;<CAP-MIN>;IGNORE
+
+reorder-after <U0073>
+<s-z>	<s-z-hu>;<PCT>;<MIN>;IGNORE
+<s-Z>	<s-z-hu>;<PCT>;<MIN-CAP>;IGNORE
+reorder-after <U0053>
+<S-Z>	<s-z-hu>;<PCT>;<CAP>;IGNORE
+<S-z>	<s-z-hu>;<PCT>;<CAP-MIN>;IGNORE
+
+reorder-after <U0074>
+<t-y>	<t-y-hu>;<PCT>;<MIN>;IGNORE
+<t-Y>	<t-y-hu>;<PCT>;<MIN-CAP>;IGNORE
+reorder-after <U0054>
+<T-Y>	<t-y-hu>;<PCT>;<CAP>;IGNORE
+<T-y>	<t-y-hu>;<PCT>;<CAP-MIN>;IGNORE
+
+reorder-after <U007A>
+<z-s>	<z-s-hu>;<PCT>;<MIN>;IGNORE
+<z-S>	<z-s-hu>;<PCT>;<MIN-CAP>;IGNORE
+reorder-after <U005A>
+<Z-S>	<z-s-hu>;<PCT>;<CAP>;IGNORE
+<Z-s>	<z-s-hu>;<PCT>;<CAP-MIN>;IGNORE
+
+reorder-end
+
+END LC_COLLATE
+
+LC_CTYPE
+copy "i18n"
+END LC_CTYPE
+
+LC_MESSAGES
+yesexpr "<U005E><U005B><U0049><U0069><U0059><U0079><U005D><U002E><U002A>"
+noexpr  "<U005E><U005B><U006E><U004E><U005D><U002E><U002A>"
+END LC_MESSAGES
+
+LC_MONETARY
+int_curr_symbol           "<U0048><U0055><U0046><U0020>"
+currency_symbol           "<U0046><U0054>"
+mon_decimal_point         "<U002C>"
+mon_thousands_sep         "<U0020>"
+mon_grouping              3;3
+positive_sign             ""
+negative_sign             "<U002D>"
+int_frac_digits           2
+frac_digits               2
+p_cs_precedes             1
+p_sep_by_space            1
+n_cs_precedes             1
+n_sep_by_space            1
+p_sign_posn               1
+n_sign_posn               1
+END LC_MONETARY
+
+LC_NUMERIC
+decimal_point             "<U002C>"
+thousands_sep             ""
+grouping                  0;0
+END LC_NUMERIC
+
+LC_TIME
+abday   "<U0056>";"<U0048>";"<U004B>";"<U0053><U005A><U0045>";/
+        "<U0043><U0053>";"<U0050>";"<U0053><U005A><U004F>"
+day     "<U0056><U0041><U0053><U00C1><U0052><U004E><U0041><U0050>";/
+        "<U0048><U00C9><U0054><U0046><U0150>";/
+        "<U004B><U0045><U0044><U0044>";/
+        "<U0053><U005A><U0045><U0052><U0044><U0041>";/
+        "<U0043><U0053><U00DC><U0054><U00D6><U0052><U0054><U00D6><U004B>";/
+        "<U0050><U00C9><U004E><U0054><U0045><U004B>";/
+        "<U0053><U005A><U004F><U004D><U0042><U0041><U0054>"
+abmon   "<U004A><U0041><U004E>";"<U0046><U0045><U0042>";/
+        "<U004D><U00C1><U0052>";"<U00C1><U0050><U0052>";/
+        "<U004D><U00C1><U004A>";"<U004A><U00DA><U004E>";/
+        "<U004A><U00DA><U004C>";"<U0041><U0055><U0047>";/
+        "<U0053><U005A><U0045>";"<U004F><U004B><U0054>";/
+        "<U004E><U004F><U0056>";"<U0044><U0045><U0043>"
+mon     "<U004A><U0041><U004E><U0055><U00C1><U0052>";/
+        "<U0046><U0045><U0042><U0052><U0055><U00C1><U0052>";/
+        "<U004D><U00C1><U0052><U0043><U0049><U0055><U0053>";/
+        "<U00C1><U0050><U0052><U0049><U004C><U0049><U0053>";/
+        "<U004D><U00C1><U004A><U0055><U0053>";/
+        "<U004A><U00DA><U004E><U0049><U0055><U0053>";/
+        "<U004A><U00DA><U004C><U0049><U0055><U0053>";/
+        "<U0041><U0055><U0047><U0055><U0053><U005A><U0054><U0055><U0053>";/
+        "<U0053><U005A><U0045><U0050><U0054><U0045><U004D><U0042><U0045><U0052>";/
+        "<U004F><U004B><U0054><U00D3><U0042><U0045><U0052>";/
+        "<U004E><U004F><U0056><U0045><U004D><U0042><U0045><U0052>";/
+        "<U0044><U0045><U0043><U0045><U004D><U0042><U0045><U0052>"
+d_t_fmt "<U0025><U0061><U0020><U0025><U0064><U0020><U0025><U0062><U0020><U0025><U0059><U0020><U0025><U0054><U0020><U0025><U005A>"
+d_fmt   "<U0025><U0059><U002D><U0025><U006D><U002D><U0025><U0064>"
+t_fmt   "<U0025><U0054>"
+am_pm   "";""
+t_fmt_ampm ""
+date_fmt       "<U0025><U0061><U0020><U0025><U0062><U0020><U0025><U0065>/
+<U0020><U0025><U0048><U003A><U0025><U004D><U003A><U0025><U0053><U0020>/
+<U0025><U005A><U0020><U0025><U0059>"
+END LC_TIME
+
+LC_PAPER
+% FIXME
+height   297
+% FIXME
+width    210
+END LC_PAPER
+
+LC_TELEPHONE
+tel_int_fmt    "<U002B><U0025><U0063><U0020><U0025><U0061><U0020><U0025>/
+<U006C>"
+int_prefix     "<U0033><U0036>"
+END LC_TELEPHONE
+
+LC_MEASUREMENT
+% FIXME
+measurement    1
+END LC_MEASUREMENT
+
+LC_NAME
+name_fmt    "<U0025><U0064><U0025><U0074><U0025><U0067><U0025><U0074>/
+<U0025><U006D><U0025><U0074><U0025><U0066>"
+END LC_NAME
+
+LC_ADDRESS
+postal_fmt    "<U0025><U0066><U0025><U004E><U0025><U0061><U0025><U004E>/
+<U0025><U0064><U0025><U004E><U0025><U0062><U0025><U004E><U0025><U0073>/
+<U0020><U0025><U0068><U0020><U0025><U0065><U0020><U0025><U0072><U0025>/
+<U004E><U0025><U0025><U007A><U0020><U0025><U0054><U0025>/
+<U004E><U0025><U0063><U0025><U004E>"
+END LC_ADDRESS
